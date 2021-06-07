@@ -1,0 +1,20 @@
+{
+  "keystore": {
+    "path": "YOUR_KEYSTORE_PATH",
+    "password": "YOUR_KEYSTORE_PASSWORD"
+  },
+  "api": {
+    "debug": true,
+    "jwt": {
+      "iss": "apk-migrator",
+      "public_key": "YOUR_JWT_PUBLIC_KEY",
+      "algorithm": "RS256"
+    }
+  },
+  "celery": {
+    "redis": {
+      "broker_url": "redis://localhost:6379/0",
+      "result_backend": "redis://localhost:6379/0"
+    }
+  }
+}
