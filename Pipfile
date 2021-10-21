@@ -4,10 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-celery = "==5.1.0"
-colorlog = "==5.0.1"
-flask = "==1.1.4"
-flask-restx = "==0.4.0"
+celery = "==5.1.2"
+colorlog = "==6.5.0"
+flask = "==2.0.2"
+flask-restx = "==0.5.1"
 gunicorn = "==20.1.0"
 redis = "==3.5.3"
 yajwt = "==0.1.0"
