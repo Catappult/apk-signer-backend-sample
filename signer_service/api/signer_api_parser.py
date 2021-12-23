@@ -10,6 +10,7 @@ class SignerApiParser:
     def get_parser_post_signer():
         parser = reqparse.RequestParser()
         parser.add_argument("apk", type=FileStorage, location="files", help="APK file")
+        parser.add_argument("package_name", type=str, help="APK packageName")
         return parser
 
     @staticmethod

@@ -44,6 +44,9 @@ class SignerEndpoint(Resource):
         args = parser.parse_args()
 
         apk_path = os.path.join(self.__tmp_dir, uuid.uuid4().hex + ".apk")
+
+        # if you need to know APK packageName beforehand, you can get it through
+        #   args.package_name
         self.__upload(args.apk, apk_path)
 
         task = self.__apk_signer_task.delay(apk_path)
